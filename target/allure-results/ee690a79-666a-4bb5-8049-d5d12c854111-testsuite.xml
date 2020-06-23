@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1592249174117" stop="1592249230786" version="1.5.4" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Default suite : Default test</name>
+    <title>Default suite : Default test</title>
+    <test-cases>
+        <test-case start="1592249182292" stop="1592249208715" status="passed">
+            <name>SearchTestByDob</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default suite"/>
+                <label name="testGroup" value="Default test"/>
+                <label name="testClass" value="com.ch.tests.SearchFunctionalityTest"/>
+                <label name="testMethod" value="SearchTestByDob"/>
+                <label name="host" value="LOH070XPGH4JK77.cardinalhealth.net"/>
+                <label name="thread" value="15035@LOH070XPGH4JK77.cardinalhealth.net.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1592249212038" stop="1592249229909" status="passed">
+            <name>SearchTestByID</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default suite"/>
+                <label name="testGroup" value="Default test"/>
+                <label name="testClass" value="com.ch.tests.SearchFunctionalityTest"/>
+                <label name="testMethod" value="SearchTestByID"/>
+                <label name="host" value="LOH070XPGH4JK77.cardinalhealth.net"/>
+                <label name="thread" value="15035@LOH070XPGH4JK77.cardinalhealth.net.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>
