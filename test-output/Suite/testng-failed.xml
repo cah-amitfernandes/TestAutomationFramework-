@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
-  <test thread-count="5" name="Login(failed)" parallel="tests">
-    <parameter name="browserName" value="chrome"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="com.ch.tests.FailedCMRTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="FailedCMR1"/>
+        </methods>
+      </class> <!-- com.ch.tests.FailedCMRTest -->
       <class name="com.ch.tests.LoginTest">
         <methods>
           <include name="setUp"/>
@@ -12,6 +18,27 @@
           <include name="postiveLoginTest"/>
         </methods>
       </class> <!-- com.ch.tests.LoginTest -->
+      <class name="com.ch.tests.SearchFunctionalityTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="SearchTestByID"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.ch.tests.SearchFunctionalityTest -->
+      <class name="com.ch.tests.ClaimsSubmissionTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="ClaimsSubmission"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.ch.tests.ClaimsSubmissionTest -->
+      <class name="com.ch.tests.TIPTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="TTest"/>
+        </methods>
+      </class> <!-- com.ch.tests.TIPTest -->
     </classes>
-  </test> <!-- Login(failed) -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

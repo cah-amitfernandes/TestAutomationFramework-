@@ -6,12 +6,12 @@ import org.openqa.selenium.WebDriver;
 
 public class DashboardPage extends BasePageObject {
 
-	public String dashboardPageUrl = "https://secure.outcomesmtm.com/index.cfm#/dashboard";
+	public String dashboardPageUrl = "https://staging.outcomesmtm.com/index.cfm#/dashboard";
 	private By searchboxLocator = By.cssSelector("input#patient-search-input");
 	private By searchButtonLocator = By.xpath("/html/body/div[1]/div[1]/div[3]/div[2]/div/div[1]/div[2]/div/a/div");
 
-	public DashboardPage(WebDriver driver) {
-		super(driver);
+	public DashboardPage(WebDriver driver, Logger log) {
+		super(driver, log);
 	}
 
 	public void enterSearchText(String searchtext) {

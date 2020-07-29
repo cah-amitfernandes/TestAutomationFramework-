@@ -10,9 +10,10 @@ public class PatientProfilePage extends BasePageObject {
 	private By startLinkLocator = By.cssSelector("p#startClaimLink");
 	private By firstOptionLocator = By.xpath("md-radio-button:nth-of-type(1)  .md-off");
 	private By dateSelector = By.xpath("//*[@id='input-paperInputMask']");
-	
-	public PatientProfilePage(WebDriver driver) {
-		super(driver);
+	private By TipButtonLocator = By.xpath("//*[@id='ember558']/div/div/span");
+			
+	public PatientProfilePage(WebDriver driver, Logger log) {
+		super(driver, log);
 	}
 	
 	public String getPatientId(){
@@ -32,6 +33,10 @@ public class PatientProfilePage extends BasePageObject {
 	
 	public void clickFirstOption(){
 		click(firstOptionLocator);
+	}
+	
+	public void clickTipButton(){
+		click(TipButtonLocator);
 	}
 
 }

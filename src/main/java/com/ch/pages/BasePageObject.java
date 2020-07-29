@@ -13,11 +13,10 @@ public class BasePageObject {
 
 	protected WebDriver driver;
 	protected Logger log;
-	
-	public BasePageObject(){};
 
-	public BasePageObject(WebDriver driver) {
+	public BasePageObject(WebDriver driver, Logger log) {
 		this.driver = driver;
+		this.log = log;
 	}
 
 	public void openUrl(String url) {

@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-skipped">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,26 +91,46 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,  2 skipped,  </span>
+                    <span class="method-stats">6 methods,   6 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
-                    <div class="method-list-content skipped suite-Suite">
+                    <div class="method-list-content passed suite-Suite">
                       <span>
-                        <img width="3%" src="skipped.png"/>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.ch.tests.ClaimsSubmissionTest" hash-for-method="ClaimsSubmission">ClaimsSubmission</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.ch.tests.FailedCMRTest" hash-for-method="FailedCMR1">FailedCMR1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.ch.tests.SearchFunctionalityTest" hash-for-method="SearchTestByID">SearchTestByID</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.ch.tests.TIPTest" hash-for-method="TTest">TTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.ch.tests.LoginTest" hash-for-method="negativeLoginTest">negativeLoginTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.ch.tests.LoginTest" hash-for-method="postiveLoginTest">postiveLoginTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-Suite -->
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -122,9 +142,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-skipped">
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
+              <img src="passed.png"/>
               <span class="class-name">com.ch.tests.LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -133,61 +153,6 @@
                   <a name="negativeLoginTest">
                   </a> <!-- negativeLoginTest -->
                   <span class="method-name">negativeLoginTest</span>
-                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 81
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LOH070XPGH4JK77.cardinalhealth.net&apos;, ip: &apos;fe80:0:0:0:1443:4b6f:87db:f756%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.4&apos;, java.version: &apos;1.8.0_251&apos;
-Driver info: driver.version: ChromeDriver
-remote stacktrace: 0   chromedriver                        0x0000000108732789 chromedriver + 4671369
-1   chromedriver                        0x00000001086cd5d3 chromedriver + 4257235
-2   chromedriver                        0x000000010837700f chromedriver + 757775
-3   chromedriver                        0x00000001082d6fc9 chromedriver + 102345
-4   chromedriver                        0x00000001082d31fc chromedriver + 86524
-5   chromedriver                        0x0000000108302403 chromedriver + 279555
-6   chromedriver                        0x00000001082ff213 chromedriver + 266771
-7   chromedriver                        0x00000001082d921d chromedriver + 111133
-8   chromedriver                        0x00000001082da1c5 chromedriver + 115141
-9   chromedriver                        0x00000001086f503f chromedriver + 4419647
-10  chromedriver                        0x0000000108701cda chromedriver + 4472026
-11  chromedriver                        0x0000000108701a77 chromedriver + 4471415
-12  chromedriver                        0x00000001086d9189 chromedriver + 4305289
-13  chromedriver                        0x0000000108702587 chromedriver + 4474247
-14  chromedriver                        0x00000001086eadc7 chromedriver + 4378055
-15  chromedriver                        0x00000001087187f4 chromedriver + 4564980
-16  chromedriver                        0x0000000108738717 chromedriver + 4695831
-17  libsystem_pthread.dylib             0x00007fff6ea42109 _pthread_start + 148
-18  libsystem_pthread.dylib             0x00007fff6ea3db8b thread_start + 15
-
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
-	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:499)
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:486)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
-	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
-	at com.ch.base.BrowserDriverFactory.createDriver(BrowserDriverFactory.java:25)
-	at com.ch.base.Base.setUp(Base.java:27)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-... Removed 26 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -195,67 +160,80 @@ remote stacktrace: 0   chromedriver                        0x0000000108732789 ch
                   <a name="postiveLoginTest">
                   </a> <!-- postiveLoginTest -->
                   <span class="method-name">postiveLoginTest</span>
-                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 81
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LOH070XPGH4JK77.cardinalhealth.net&apos;, ip: &apos;fe80:0:0:0:1443:4b6f:87db:f756%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.4&apos;, java.version: &apos;1.8.0_251&apos;
-Driver info: driver.version: ChromeDriver
-remote stacktrace: 0   chromedriver                        0x00000001044c9789 chromedriver + 4671369
-1   chromedriver                        0x00000001044645d3 chromedriver + 4257235
-2   chromedriver                        0x000000010410e00f chromedriver + 757775
-3   chromedriver                        0x000000010406dfc9 chromedriver + 102345
-4   chromedriver                        0x000000010406a1fc chromedriver + 86524
-5   chromedriver                        0x0000000104099403 chromedriver + 279555
-6   chromedriver                        0x0000000104096213 chromedriver + 266771
-7   chromedriver                        0x000000010407021d chromedriver + 111133
-8   chromedriver                        0x00000001040711c5 chromedriver + 115141
-9   chromedriver                        0x000000010448c03f chromedriver + 4419647
-10  chromedriver                        0x0000000104498cda chromedriver + 4472026
-11  chromedriver                        0x0000000104498a77 chromedriver + 4471415
-12  chromedriver                        0x0000000104470189 chromedriver + 4305289
-13  chromedriver                        0x0000000104499587 chromedriver + 4474247
-14  chromedriver                        0x0000000104481dc7 chromedriver + 4378055
-15  chromedriver                        0x00000001044af7f4 chromedriver + 4564980
-16  chromedriver                        0x00000001044cf717 chromedriver + 4695831
-17  libsystem_pthread.dylib             0x00007fff6ea42109 _pthread_start + 148
-18  libsystem_pthread.dylib             0x00007fff6ea3db8b thread_start + 15
-
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
-	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:499)
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:486)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
-	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
-	at com.ch.base.BrowserDriverFactory.createDriver(BrowserDriverFactory.java:25)
-	at com.ch.base.Base.setUp(Base.java:27)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-... Removed 26 stack frames
-</div> <!-- stack-trace -->
                   <em>
 (Verifying login functionality)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-skipped -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.ch.tests.ClaimsSubmissionTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ClaimsSubmission">
+                  </a> <!-- ClaimsSubmission -->
+                  <span class="method-name">ClaimsSubmission</span>
+                  <em>
+(Verification of Claims Submission)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.ch.tests.SearchFunctionalityTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="SearchTestByID">
+                  </a> <!-- SearchTestByID -->
+                  <span class="method-name">SearchTestByID</span>
+                  <em>
+(Verification of Search functionality)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.ch.tests.TIPTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TTest">
+                  </a> <!-- TTest -->
+                  <span class="method-name">TTest</span>
+                  <em>
+(Verification of TIP workflow)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.ch.tests.FailedCMRTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="FailedCMR1">
+                  </a> <!-- FailedCMR1 -->
+                  <span class="method-name">FailedCMR1</span>
+                  <em>
+(Verification of Unsuccessful CMR workflow)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -265,13 +243,17 @@ remote stacktrace: 0   chromedriver                        0x00000001044c9789 ch
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Suite&quot; parallel=&quot;tests&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Login&quot; parallel=&quot;tests&quot;&gt;
-    &lt;parameter name=&quot;browserName&quot; value=&quot;chrome&quot;/&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Suite&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.ch.tests.LoginTest&quot;/&gt;
+      &lt;class name=&quot;com.ch.tests.ClaimsSubmissionTest&quot;/&gt;
+      &lt;class name=&quot;com.ch.tests.SearchFunctionalityTest&quot;/&gt;
+      &lt;class name=&quot;com.ch.tests.FailedCMRTest&quot;/&gt;
+      &lt;class name=&quot;com.ch.tests.TIPTest&quot;/&gt;
+      &lt;class name=&quot;com.ch.base.Base&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Login --&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -283,7 +265,7 @@ remote stacktrace: 0   chromedriver                        0x00000001044c9789 ch
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Login (1 class)</span>
+                <span class="test-name">Test (6 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -309,20 +291,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'negativeLoginTest')
-data.setCell(0, 2, 'com.ch.tests.LoginTest')
-data.setCell(0, 3, 0);
+data.setCell(0, 1, 'ClaimsSubmission')
+data.setCell(0, 2, 'com.ch.tests.ClaimsSubmissionTest')
+data.setCell(0, 3, 49685);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'postiveLoginTest')
-data.setCell(1, 2, 'com.ch.tests.LoginTest')
-data.setCell(1, 3, 0);
+data.setCell(1, 1, 'FailedCMR1')
+data.setCell(1, 2, 'com.ch.tests.FailedCMRTest')
+data.setCell(1, 3, 46095);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'TTest')
+data.setCell(2, 2, 'com.ch.tests.TIPTest')
+data.setCell(2, 3, 25819);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'SearchTestByID')
+data.setCell(3, 2, 'com.ch.tests.SearchFunctionalityTest')
+data.setCell(3, 3, 20747);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'negativeLoginTest')
+data.setCell(4, 2, 'com.ch.tests.LoginTest')
+data.setCell(4, 3, 15196);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'postiveLoginTest')
+data.setCell(5, 2, 'com.ch.tests.LoginTest')
+data.setCell(5, 3, 11707);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 19 seconds</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -350,36 +348,88 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.ch.tests.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">setUp(chrome, org.testng.TestRunner@36eb5032)</span>
+                <span class="method-name">setUp(chrome, org.testng.TestRunner@3f34edfc)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">postiveLoginTest</span>
-                <span class="method-start">13722 ms</span>
+                <span class="method-start">4735 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">tearDown</span>
-                <span class="method-start">13778 ms</span>
+                <span class="method-start">16470 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">setUp(chrome, org.testng.TestRunner@36eb5032)</span>
-                <span class="method-start">13799 ms</span>
+                <span class="method-name">setUp(chrome, org.testng.TestRunner@3f34edfc)</span>
+                <span class="method-start">16650 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">negativeLoginTest</span>
-                <span class="method-start">18909 ms</span>
+                <span class="method-start">18427 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">tearDown</span>
-                <span class="method-start">18928 ms</span>
+                <span class="method-start">33630 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ch.tests.ClaimsSubmissionTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, org.testng.TestRunner@3f34edfc)</span>
+                <span class="method-start">33739 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ClaimsSubmission</span>
+                <span class="method-start">35541 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">85239 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ch.tests.SearchFunctionalityTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, org.testng.TestRunner@3f34edfc)</span>
+                <span class="method-start">85358 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">SearchTestByID</span>
+                <span class="method-start">87416 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">108170 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ch.tests.FailedCMRTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, org.testng.TestRunner@3f34edfc)</span>
+                <span class="method-start">108310 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">FailedCMR1</span>
+                <span class="method-start">110187 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">156288 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ch.tests.TIPTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, org.testng.TestRunner@3f34edfc)</span>
+                <span class="method-start">156409 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TTest</span>
+                <span class="method-start">158524 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">184348 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

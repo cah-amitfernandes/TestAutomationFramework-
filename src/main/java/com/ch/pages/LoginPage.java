@@ -15,8 +15,8 @@ public class LoginPage extends BasePageObject {
 	private By errorMessageLocator = By.cssSelector("p#errorSummaryMsg");
 
 
-	public LoginPage(WebDriver driver) {
-		super(driver);
+	public LoginPage(WebDriver driver, Logger log) {
+		super(driver, log);
 	}
 	
 	

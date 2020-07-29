@@ -1,32 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite" parallel = "tests" thread-count="5">
-  <test name="Login">
-  <parameter name = "browserName" value = "chrome"/>
+<suite name="Suite">
+  <test thread-count="5" name="Test">
     <classes>
       <class name="com.ch.tests.LoginTest"/>
+      <class name="com.ch.tests.ClaimsSubmissionTest"/>
+      <class name="com.ch.tests.SearchFunctionalityTest"/>
+      <class name="com.ch.tests.FailedCMRTest"/>
+      <class name="com.ch.tests.TIPTest"/>
+      <class name="com.ch.base.Base"/>
     </classes>
   </test> <!-- Test -->
-  
-  <test name="Search">
-  <parameter name = "browserName" value = "chrome"/>
-    <classes>
-      <class name="com.ch.tests.SearchFunctionalityTest"/>
-    </classes>
-  </test>
-  
-  <test name="ClaimsSubmission">
-  <parameter name = "browserName" value = "chrome"/>
-    <classes>
-      <class name="com.ch.tests.ClaimsSubmissionTest"/>
-    </classes>
-  </test>
-  
-  <test name="FailedCMR">
-  <parameter name = "browserName" value = "chrome"/>
-    <classes>
-      <class name="com.ch.tests.FailedCMRTest"/>
-    </classes>
-  </test>
-  
 </suite> <!-- Suite -->

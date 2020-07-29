@@ -16,8 +16,8 @@ public class ClaimsSubmissionPage extends BasePageObject {
 	private By nextMedButtonLocator = By.cssSelector("a#currentMedNextButton");
 	private By continueButtonLocator = By.cssSelector("a#continueReview");
 
-	public ClaimsSubmissionPage(WebDriver driver) {
-		super(driver);
+	public ClaimsSubmissionPage(WebDriver driver, Logger log) {
+		super(driver, log);
 	}
 	
 	public void selectReason(String selection){

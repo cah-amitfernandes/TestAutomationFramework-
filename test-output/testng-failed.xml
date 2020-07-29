@@ -3,13 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ch.tests.FailedCMRTest">
+      <class name="com.ch.tests.LoginTest">
         <methods>
-          <include name="cleanUpAfterTestMethod"/>
-          <include name="setupTestMethod"/>
-          <include name="FailedCMR1"/>
+          <include name="setUp"/>
+          <include name="negativeLoginTest"/>
+          <include name="tearDown"/>
+          <include name="postiveLoginTest"/>
         </methods>
-      </class> <!-- com.ch.tests.FailedCMRTest -->
+      </class> <!-- com.ch.tests.LoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

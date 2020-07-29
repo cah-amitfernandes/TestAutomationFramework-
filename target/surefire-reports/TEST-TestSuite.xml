@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="24.908" tests="6" errors="0" skipped="2" failures="4">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="186.677" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib"/>
@@ -25,7 +25,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="os.name" value="Mac OS X"/>
-    <property name="classworlds.conf" value="/Users/amit.fernandes/Documents/workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf4959261854316957385.tmp"/>
+    <property name="classworlds.conf" value="/Users/amit.fernandes/Documents/workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf3572610357986709698.tmp"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/Users/amit.fernandes/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -38,7 +38,7 @@
     <property name="java.specification.version" value="1.8"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="user.name" value="amit.fernandes"/>
-    <property name="java.class.path" value="/private/var/folders/_l/cztg9zg547v190nnt387gmym0000gn/T/AppTranslocation/823DDB8F-0FC6-4A36-8ED3-508532D33617/d/Eclipse.app/Contents/Eclipse/plugins/org.eclipse.m2e.maven.runtime_1.7.0.20160603-1931/jars/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.class.path" value="/private/var/folders/_l/cztg9zg547v190nnt387gmym0000gn/T/AppTranslocation/B02054E0-1CA2-4DA3-B421-4821EBF2E702/d/Eclipse.app/Contents/Eclipse/plugins/org.eclipse.m2e.maven.runtime_1.7.0.20160603-1931/jars/plexus-classworlds-2.5.2.jar"/>
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre"/>
@@ -58,82 +58,10 @@
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="setUp" classname="com.ch.tests.LoginTest" time="18.174">
-    <failure message="session not created: This version of ChromeDriver only supports Chrome version 81&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;LOH070XPGH4JK77.cardinalhealth.net&apos;, ip: &apos;fe80:0:0:0:1443:4b6f:87db:f756%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.4&apos;, java.version: &apos;1.8.0_251&apos;&#10;Driver info: driver.version: ChromeDriver&#10;remote stacktrace: 0   chromedriver                        0x00000001044c9789 chromedriver + 4671369&#10;1   chromedriver                        0x00000001044645d3 chromedriver + 4257235&#10;2   chromedriver                        0x000000010410e00f chromedriver + 757775&#10;3   chromedriver                        0x000000010406dfc9 chromedriver + 102345&#10;4   chromedriver                        0x000000010406a1fc chromedriver + 86524&#10;5   chromedriver                        0x0000000104099403 chromedriver + 279555&#10;6   chromedriver                        0x0000000104096213 chromedriver + 266771&#10;7   chromedriver                        0x000000010407021d chromedriver + 111133&#10;8   chromedriver                        0x00000001040711c5 chromedriver + 115141&#10;9   chromedriver                        0x000000010448c03f chromedriver + 4419647&#10;10  chromedriver                        0x0000000104498cda chromedriver + 4472026&#10;11  chromedriver                        0x0000000104498a77 chromedriver + 4471415&#10;12  chromedriver                        0x0000000104470189 chromedriver + 4305289&#10;13  chromedriver                        0x0000000104499587 chromedriver + 4474247&#10;14  chromedriver                        0x0000000104481dc7 chromedriver + 4378055&#10;15  chromedriver                        0x00000001044af7f4 chromedriver + 4564980&#10;16  chromedriver                        0x00000001044cf717 chromedriver + 4695831&#10;17  libsystem_pthread.dylib             0x00007fff6ea42109 _pthread_start + 148&#10;18  libsystem_pthread.dylib             0x00007fff6ea3db8b thread_start + 15&#10;" type="org.openqa.selenium.SessionNotCreatedException">org.openqa.selenium.SessionNotCreatedException: 
-session not created: This version of ChromeDriver only supports Chrome version 81
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LOH070XPGH4JK77.cardinalhealth.net', ip: 'fe80:0:0:0:1443:4b6f:87db:f756%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.4', java.version: '1.8.0_251'
-Driver info: driver.version: ChromeDriver
-remote stacktrace: 0   chromedriver                        0x00000001044c9789 chromedriver + 4671369
-1   chromedriver                        0x00000001044645d3 chromedriver + 4257235
-2   chromedriver                        0x000000010410e00f chromedriver + 757775
-3   chromedriver                        0x000000010406dfc9 chromedriver + 102345
-4   chromedriver                        0x000000010406a1fc chromedriver + 86524
-5   chromedriver                        0x0000000104099403 chromedriver + 279555
-6   chromedriver                        0x0000000104096213 chromedriver + 266771
-7   chromedriver                        0x000000010407021d chromedriver + 111133
-8   chromedriver                        0x00000001040711c5 chromedriver + 115141
-9   chromedriver                        0x000000010448c03f chromedriver + 4419647
-10  chromedriver                        0x0000000104498cda chromedriver + 4472026
-11  chromedriver                        0x0000000104498a77 chromedriver + 4471415
-12  chromedriver                        0x0000000104470189 chromedriver + 4305289
-13  chromedriver                        0x0000000104499587 chromedriver + 4474247
-14  chromedriver                        0x0000000104481dc7 chromedriver + 4378055
-15  chromedriver                        0x00000001044af7f4 chromedriver + 4564980
-16  chromedriver                        0x00000001044cf717 chromedriver + 4695831
-17  libsystem_pthread.dylib             0x00007fff6ea42109 _pthread_start + 148
-18  libsystem_pthread.dylib             0x00007fff6ea3db8b thread_start + 15
-
-</failure>
-    <system-err><![CDATA[Starting ChromeDriver 81.0.4044.69 (6813546031a4bc83f717a2ef7cd4ac6ec1199132-refs/branch-heads/4044@{#776}) on port 43725
-Only local connections are allowed.
-Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-]]></system-err>
-  </testcase>
-  <testcase name="setUp" classname="com.ch.tests.LoginTest" time="5.165">
-    <failure message="session not created: This version of ChromeDriver only supports Chrome version 81&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;LOH070XPGH4JK77.cardinalhealth.net&apos;, ip: &apos;fe80:0:0:0:1443:4b6f:87db:f756%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.4&apos;, java.version: &apos;1.8.0_251&apos;&#10;Driver info: driver.version: ChromeDriver&#10;remote stacktrace: 0   chromedriver                        0x0000000108732789 chromedriver + 4671369&#10;1   chromedriver                        0x00000001086cd5d3 chromedriver + 4257235&#10;2   chromedriver                        0x000000010837700f chromedriver + 757775&#10;3   chromedriver                        0x00000001082d6fc9 chromedriver + 102345&#10;4   chromedriver                        0x00000001082d31fc chromedriver + 86524&#10;5   chromedriver                        0x0000000108302403 chromedriver + 279555&#10;6   chromedriver                        0x00000001082ff213 chromedriver + 266771&#10;7   chromedriver                        0x00000001082d921d chromedriver + 111133&#10;8   chromedriver                        0x00000001082da1c5 chromedriver + 115141&#10;9   chromedriver                        0x00000001086f503f chromedriver + 4419647&#10;10  chromedriver                        0x0000000108701cda chromedriver + 4472026&#10;11  chromedriver                        0x0000000108701a77 chromedriver + 4471415&#10;12  chromedriver                        0x00000001086d9189 chromedriver + 4305289&#10;13  chromedriver                        0x0000000108702587 chromedriver + 4474247&#10;14  chromedriver                        0x00000001086eadc7 chromedriver + 4378055&#10;15  chromedriver                        0x00000001087187f4 chromedriver + 4564980&#10;16  chromedriver                        0x0000000108738717 chromedriver + 4695831&#10;17  libsystem_pthread.dylib             0x00007fff6ea42109 _pthread_start + 148&#10;18  libsystem_pthread.dylib             0x00007fff6ea3db8b thread_start + 15&#10;" type="org.openqa.selenium.SessionNotCreatedException">org.openqa.selenium.SessionNotCreatedException: 
-session not created: This version of ChromeDriver only supports Chrome version 81
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LOH070XPGH4JK77.cardinalhealth.net', ip: 'fe80:0:0:0:1443:4b6f:87db:f756%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.4', java.version: '1.8.0_251'
-Driver info: driver.version: ChromeDriver
-remote stacktrace: 0   chromedriver                        0x0000000108732789 chromedriver + 4671369
-1   chromedriver                        0x00000001086cd5d3 chromedriver + 4257235
-2   chromedriver                        0x000000010837700f chromedriver + 757775
-3   chromedriver                        0x00000001082d6fc9 chromedriver + 102345
-4   chromedriver                        0x00000001082d31fc chromedriver + 86524
-5   chromedriver                        0x0000000108302403 chromedriver + 279555
-6   chromedriver                        0x00000001082ff213 chromedriver + 266771
-7   chromedriver                        0x00000001082d921d chromedriver + 111133
-8   chromedriver                        0x00000001082da1c5 chromedriver + 115141
-9   chromedriver                        0x00000001086f503f chromedriver + 4419647
-10  chromedriver                        0x0000000108701cda chromedriver + 4472026
-11  chromedriver                        0x0000000108701a77 chromedriver + 4471415
-12  chromedriver                        0x00000001086d9189 chromedriver + 4305289
-13  chromedriver                        0x0000000108702587 chromedriver + 4474247
-14  chromedriver                        0x00000001086eadc7 chromedriver + 4378055
-15  chromedriver                        0x00000001087187f4 chromedriver + 4564980
-16  chromedriver                        0x0000000108738717 chromedriver + 4695831
-17  libsystem_pthread.dylib             0x00007fff6ea42109 _pthread_start + 148
-18  libsystem_pthread.dylib             0x00007fff6ea3db8b thread_start + 15
-
-</failure>
-    <system-err><![CDATA[Starting ChromeDriver 81.0.4044.69 (6813546031a4bc83f717a2ef7cd4ac6ec1199132-refs/branch-heads/4044@{#776}) on port 41837
-Only local connections are allowed.
-Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-]]></system-err>
-  </testcase>
-  <testcase name="postiveLoginTest" classname="com.ch.tests.LoginTest" time="0">
-    <skipped message="session not created: This version of ChromeDriver only supports Chrome version 81&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;LOH070XPGH4JK77.cardinalhealth.net&apos;, ip: &apos;fe80:0:0:0:1443:4b6f:87db:f756%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.4&apos;, java.version: &apos;1.8.0_251&apos;&#10;Driver info: driver.version: ChromeDriver&#10;remote stacktrace: 0   chromedriver                        0x00000001044c9789 chromedriver + 4671369&#10;1   chromedriver                        0x00000001044645d3 chromedriver + 4257235&#10;2   chromedriver                        0x000000010410e00f chromedriver + 757775&#10;3   chromedriver                        0x000000010406dfc9 chromedriver + 102345&#10;4   chromedriver                        0x000000010406a1fc chromedriver + 86524&#10;5   chromedriver                        0x0000000104099403 chromedriver + 279555&#10;6   chromedriver                        0x0000000104096213 chromedriver + 266771&#10;7   chromedriver                        0x000000010407021d chromedriver + 111133&#10;8   chromedriver                        0x00000001040711c5 chromedriver + 115141&#10;9   chromedriver                        0x000000010448c03f chromedriver + 4419647&#10;10  chromedriver                        0x0000000104498cda chromedriver + 4472026&#10;11  chromedriver                        0x0000000104498a77 chromedriver + 4471415&#10;12  chromedriver                        0x0000000104470189 chromedriver + 4305289&#10;13  chromedriver                        0x0000000104499587 chromedriver + 4474247&#10;14  chromedriver                        0x0000000104481dc7 chromedriver + 4378055&#10;15  chromedriver                        0x00000001044af7f4 chromedriver + 4564980&#10;16  chromedriver                        0x00000001044cf717 chromedriver + 4695831&#10;17  libsystem_pthread.dylib             0x00007fff6ea42109 _pthread_start + 148&#10;18  libsystem_pthread.dylib             0x00007fff6ea3db8b thread_start + 15&#10;"/>
-  </testcase>
-  <testcase name="tearDown" classname="com.ch.tests.LoginTest" time="0.048">
-    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
-</failure>
-  </testcase>
-  <testcase name="tearDown" classname="com.ch.tests.LoginTest" time="0.021">
-    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
-</failure>
-  </testcase>
-  <testcase name="negativeLoginTest" classname="com.ch.tests.LoginTest" time="0">
-    <skipped message="session not created: This version of ChromeDriver only supports Chrome version 81&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;LOH070XPGH4JK77.cardinalhealth.net&apos;, ip: &apos;fe80:0:0:0:1443:4b6f:87db:f756%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.4&apos;, java.version: &apos;1.8.0_251&apos;&#10;Driver info: driver.version: ChromeDriver&#10;remote stacktrace: 0   chromedriver                        0x0000000108732789 chromedriver + 4671369&#10;1   chromedriver                        0x00000001086cd5d3 chromedriver + 4257235&#10;2   chromedriver                        0x000000010837700f chromedriver + 757775&#10;3   chromedriver                        0x00000001082d6fc9 chromedriver + 102345&#10;4   chromedriver                        0x00000001082d31fc chromedriver + 86524&#10;5   chromedriver                        0x0000000108302403 chromedriver + 279555&#10;6   chromedriver                        0x00000001082ff213 chromedriver + 266771&#10;7   chromedriver                        0x00000001082d921d chromedriver + 111133&#10;8   chromedriver                        0x00000001082da1c5 chromedriver + 115141&#10;9   chromedriver                        0x00000001086f503f chromedriver + 4419647&#10;10  chromedriver                        0x0000000108701cda chromedriver + 4472026&#10;11  chromedriver                        0x0000000108701a77 chromedriver + 4471415&#10;12  chromedriver                        0x00000001086d9189 chromedriver + 4305289&#10;13  chromedriver                        0x0000000108702587 chromedriver + 4474247&#10;14  chromedriver                        0x00000001086eadc7 chromedriver + 4378055&#10;15  chromedriver                        0x00000001087187f4 chromedriver + 4564980&#10;16  chromedriver                        0x0000000108738717 chromedriver + 4695831&#10;17  libsystem_pthread.dylib             0x00007fff6ea42109 _pthread_start + 148&#10;18  libsystem_pthread.dylib             0x00007fff6ea3db8b thread_start + 15&#10;"/>
-  </testcase>
+  <testcase name="postiveLoginTest" classname="com.ch.tests.LoginTest" time="11.71"/>
+  <testcase name="negativeLoginTest" classname="com.ch.tests.LoginTest" time="15.197"/>
+  <testcase name="ClaimsSubmission" classname="com.ch.tests.ClaimsSubmissionTest" time="49.685"/>
+  <testcase name="SearchTestByID" classname="com.ch.tests.SearchFunctionalityTest" time="20.755"/>
+  <testcase name="FailedCMR1" classname="com.ch.tests.FailedCMRTest" time="46.096"/>
+  <testcase name="TTest" classname="com.ch.tests.TIPTest" time="25.818"/>
 </testsuite>

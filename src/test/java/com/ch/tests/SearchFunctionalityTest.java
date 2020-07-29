@@ -1,24 +1,35 @@
 package com.ch.tests;
 
 import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
 
 import com.ch.base.Base;
 import com.ch.pages.DashboardPage;
 import com.ch.pages.LoginPage;
 
-import junit.framework.Assert;
+import io.qameta.allure.Description;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Story;
 
 public class SearchFunctionalityTest extends Base{
 	
-	@Test
+	@Test (description = "Verification of Search functionality")
+	@Severity(SeverityLevel.NORMAL)
+	@Description("Verification of the Search Functionality")
+	@Story("Search Functionality")
 	public void SearchTestByID(){
 	
-	LoginPage lp = new LoginPage(driver);
-	DashboardPage dp = new DashboardPage(driver);
+	LoginPage lp = new LoginPage(driver, log);
+	DashboardPage dp = new DashboardPage(driver, log);
 	
-	lp.openUrl("https://secure.outcomesmtm.com/index.cfm?event=login");
-	lp.setUsername("amit.fernandes");
-	lp.setPassword("Fuse@2020");
+	lp.openUrl("https://staging.outcomesmtm.com/index.cfm?event=login");
+
+	lp.setUsername("autuser_pharm");
+	lp.setPassword("Cardinal@1");
 	lp.clickLogin();
 	try {
 		Thread.sleep(3000);
@@ -27,9 +38,9 @@ public class SearchFunctionalityTest extends Base{
 		e.printStackTrace();
 	}
 	
-	Assert.assertEquals(dp.dashboardPageUrl, driver.getCurrentUrl());	
+	AssertJUnit.assertEquals(dp.dashboardPageUrl, driver.getCurrentUrl());	
 	
-	dp.enterSearchText("MTM0106");
+	dp.enterSearchText("35f1d50c-5026-488e-ad44-3ed190aaf811");
 	dp.clickSearchButton();
 	
 	try {
@@ -78,13 +89,13 @@ public class SearchFunctionalityTest extends Base{
 	
 	dp.verifySearch(s);
 	
-	}*/
+	}
 	
 	@Test
 	public void SearchTestByDob(){
 	
-	LoginPage lp = new LoginPage(driver);
-	DashboardPage dp = new DashboardPage(driver);
+	LoginPage lp = new LoginPage(driver, log);
+	DashboardPage dp = new DashboardPage(driver, log);
 	
 	lp.openUrl("https://secure.outcomesmtm.com/index.cfm?event=login");
 	lp.setUsername("amit.fernandes");
@@ -113,5 +124,5 @@ public class SearchFunctionalityTest extends Base{
 	
 	dp.verifySearch(s);
 	
-	}
+	}*/
 }

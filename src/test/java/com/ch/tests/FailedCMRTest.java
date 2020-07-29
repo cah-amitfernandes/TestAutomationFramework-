@@ -1,5 +1,9 @@
 package com.ch.tests;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -11,6 +15,11 @@ import com.ch.base.Base;
 import com.ch.pages.DashboardPage;
 import com.ch.pages.LoginPage;
 
+import io.qameta.allure.Description;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Story;
+
 
 
 public class FailedCMRTest extends Base {
@@ -20,15 +29,18 @@ public class FailedCMRTest extends Base {
 				
 	}
 	
-	@Test
+	@Test (description = "Verification of Unsuccessful CMR workflow")
+	@Severity(SeverityLevel.CRITICAL)
+	@Description("Verification of Unsuccessful CMR workflow")
+	@Story("CMR")
 	public void FailedCMR1(){
 		
-		LoginPage lp = new LoginPage(driver);
-		DashboardPage dp = new DashboardPage(driver);
+		LoginPage lp = new LoginPage(driver, log);
+		DashboardPage dp = new DashboardPage(driver, log);
 		
-		lp.openUrl("https://secure.outcomesmtm.com/index.cfm?event=login");
-		lp.setUsername("amit.fernandes");
-		lp.setPassword("Fuse@2020");
+		lp.openUrl("https://staging.outcomesmtm.com/index.cfm?event=login");
+		lp.setUsername("autuser_pharm");
+		lp.setPassword("Cardinal@1");
 		lp.clickLogin();
 		try {
 			Thread.sleep(3000);
@@ -49,7 +61,7 @@ public class FailedCMRTest extends Base {
 		
 		//Test Run
 				 
-		 WebElement Sample = driver.findElement(By.xpath("//*[@id='ember429']/table/tr[6]/td[1]"));
+		 WebElement Sample = driver.findElement(By.xpath("//*[@id='ember445']/table/tr[6]/td[1]")); 
 		 
 		 Sample.click();
 		
@@ -90,7 +102,7 @@ public class FailedCMRTest extends Base {
 		 
 		 WebElement dateSelector = driver.findElement(By.xpath("//*[@id='input-paperInputMask']"));
 		 
-		 dateSelector.sendKeys("06152020");
+		 dateSelector.sendKeys("07022020");
 		 
 		 try {
 				Thread.sleep(4000);
